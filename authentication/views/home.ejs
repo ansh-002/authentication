@@ -1,0 +1,38 @@
+<html>
+    <title>
+       Home page
+    </title>
+    <body>
+       <h1>Home Page</h1>
+       <h3>
+        <ul>
+            <% if(user){%> 
+            <li>
+               Welcome, <%= user.email %> 
+            </li>
+            <li>
+             <a href="/special">special page</a>
+            </li>
+            <li>
+             <a href="/logout">Log out</a>
+            </li>
+            <% } else{ %> 
+             <li>
+                 <a href="/login">Log in</a>
+             </li>
+             
+             <li>
+                 <a href="/signup">sign up</a>
+             </li>
+             <li>
+                 <a href="/special">special page</a>
+             </li>
+       
+             <% } %> 
+        </ul>
+
+       </h3>
+       
+    
+    </body>
+</html>
