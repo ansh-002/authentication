@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            Home page
+         </title>
+         <style>
+           button{
+               margin:0 auto;
+               width:100px;
+               color:blueviolet
+           }
+           body{
+               background-color: aquamarine;
+           }
+           h1{
+              
+               background-color: crimson;
+               width:200px;
+           }
+           h3{
+               background-color: darkblue;
+               color:white;
+           }
+         </style>
+    </head>
+    
+    <body>
+       <h1>Home Page</h1>
+       <h3>
+        <% if(user){%> 
+               
+        
+            Welcome, <%= user.email %> 
+            <br>
+     
+             <button>
+                 <a href="/special">Special Page</a>
+             </button>
+         
+      
+       
+             <button>
+                 <a href="/logout">Log out</a>
+             </button>
+         
+       
+         <% } else{ %> 
+       
+              <button>
+                 <a href="/login">Log in</a>
+              </button>
+              
+          
+          
+      
+              <button>
+                 <a href="/signup">Sign Up</a>
+              </button>
+              
+          
+          
+              <button>
+                 <a href="/special">Special Page</a>
+              </button>
+              
+          
+    
+          <% } %> 
+       </h3>
+       
+          
+       
+
+       
+      
+    </body>
+</html>
